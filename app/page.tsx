@@ -6,7 +6,7 @@ import HeartRain from "@/components/HeartRain";
 import CapybaraMullet from "@/components/CapybaraMullet";
 
 const APOLOGY_MESSAGE =
-  "Plis maafin aku... kemarin aku ga sopan ke kamu, dan kayaknya kamu muak sama aku, tapi plis jangan tiba-tiba dingin. Maafin yaaa?";
+  "Plis maafin aku... aku emang cowo bodoh yang ga sopan ke kamu, dan kayaknya kamu muak sama aku, tapi plis jangan tiba-tiba dingin. Maafin yaaa?";
 
 export default function Home() {
   const [forgiven, setForgiven] = useState(false);
@@ -42,7 +42,7 @@ export default function Home() {
         <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
           {APOLOGY_MESSAGE}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+        <div className="flex flex-col sm:flex-row gap-10 sm:gap-4 items-center justify-center">
           <button
             onClick={() => setForgiven(true)}
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-rose text-white font-extrabold text-lg shadow-lg hover:scale-105 active:scale-95 transition-transform"
