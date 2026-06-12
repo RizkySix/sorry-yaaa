@@ -6,7 +6,7 @@ const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
   title: "Please Forgive Me 🥺",
-  description: "Plis maafin aku Kezia",
+  description: "Cowo bodoh dan gak sopan",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
