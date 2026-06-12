@@ -6,7 +6,7 @@ import HeartRain from "@/components/HeartRain";
 import CapybaraMullet from "@/components/CapybaraMullet";
 
 const APOLOGY_MESSAGE =
-  "Plis maafin aku... aku emang cowo bodoh yang ga sopan ke kamu, dan kayaknya kamu muak sama aku, tapi plis jangan tiba-tiba dingin. Maafin yaaa?";
+  "Plis maafin ya... aku emang cowo bodoh yang ga sopan ke kamu, dan kayaknya kamu muak sama aku, tapi plis jangan tiba-tiba dingin. Maafin yaaa?";
 
 export default function Home() {
   const [forgiven, setForgiven] = useState(false);
