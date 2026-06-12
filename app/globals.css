@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(135deg, #FFE0EC 0%, #E8D5F5 100%);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+@keyframes heartFall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: fixed;
+  top: -10vh;
+  font-size: 2rem;
+  z-index: 50;
+  pointer-events: none;
+  animation: heartFall linear infinite;
+  will-change: transform;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
